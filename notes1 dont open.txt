@@ -1,0 +1,15 @@
+first clone the repo to local
+
+maybe usernmae, etc
+
+after added new files to local, git add .
+
+git commit -m "new message"
+git push
+
+
+for branches, 
+git branch branch_name
+
+chg branch, 
+git checkout branch_name
