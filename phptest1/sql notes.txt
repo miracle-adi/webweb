@@ -1,0 +1,21 @@
+CREATE TABLE users(
+    id int NOT NULL,
+    email varchar(255) NOT NULL UNIQUE AUTO_INCREMENT,
+    FIrstName varchar(255),
+    LastName varchar(255),
+    orderID bigint,
+    CONSTRAINT PK_PERSON PRIMARY KEY (id),
+    CONSTRAINT UC_PERSON UNIQUE (id,email)
+    
+);
+
+
+CREATE TABLE orders(
+    id int NOT NULL,
+
+
+    CONSTRAINT FK_PERSON FOREIGN KEY (userID) REFRENCES users(id)
+);
+
+
+orderDate date DEFAULT getdate(),
